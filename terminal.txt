@@ -1,0 +1,33 @@
+devpremoli@Prems-MacBook-Pro play % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+devpremoli@Prems-MacBook-Pro play % git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+devpremoli@Prems-MacBook-Pro play % git fetch
+From https://github.com/devpremoli/play
+ * [new branch]      remote-prem -> origin/remote-prem
+devpremoli@Prems-MacBook-Pro play % git status 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+devpremoli@Prems-MacBook-Pro play % git merge
+Already up to date.
+devpremoli@Prems-MacBook-Pro play % git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/remote-prem
+devpremoli@Prems-MacBook-Pro play % git checkout -b remote-prem origin/remote-prem
+
+branch 'remote-prem' set up to track 'origin/remote-prem'.
+Switched to a new branch 'remote-prem'
+devpremoli@Prems-MacBook-Pro play % git status
+On branch remote-prem
+Your branch is up to date with 'origin/remote-prem'.
+
+nothing to commit, working tree clean
